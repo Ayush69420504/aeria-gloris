@@ -1,6 +1,15 @@
 const user = 'ayush'
 const server = 'doge69420504'
 
+var scanlines = $('.scanlines');
+var tv = $('.tv');
+function exit() {
+    $('.tv').addClass('collapse');
+    term.disable();
+}
+
+var __EVAL = (s) => eval(`void (__EVAL = ${__EVAL}); ${s}`);
+
 const formatter = new Intl.ListFormat('en', {
     style: 'long',
     type: 'conjunction',
@@ -52,8 +61,8 @@ term.pause();
 
 function ready() {
     const seed = rand(256);
-    term.echo(() => rainbow(render('This is test'), seed), {ansi: true});
-    term.echo('[[;#fff;]Another test]').resume();
+    term.echo(() => rainbow(render('This is test'), seed), {ansi: true}).resume();
+    term.exec('help', true);
 }
 
 function rand(max) {

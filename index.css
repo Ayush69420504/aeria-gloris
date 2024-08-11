@@ -1,0 +1,11 @@
+.terminal {
+    --color: rgb(220, 220, 220);
+    --background: rgb(34, 45, 50);
+    --link-color: darkblue;
+    --animation: terminal-underline;
+    --line-thickness: 3;
+}
+
+:root {
+    --size: 1.2;
+}
